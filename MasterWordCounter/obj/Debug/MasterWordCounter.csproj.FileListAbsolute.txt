@@ -1,0 +1,16 @@
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\MasterWordCounter.exe.config
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\MasterWordCounter.exe
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\MasterWordCounter.pdb
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.csprojResolveAssemblyReference.cache
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.Form1.resources
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.ImportText.resources
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.Properties.Resources.resources
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.csproj.GenerateResource.Cache
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.exe
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.pdb
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.ViewTexts.resources
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\obj\Debug\MasterWordCounter.TextResult.resources
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\itextsharp.dll
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\itextsharp.pdfa.dll
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\itextsharp.xtra.dll
+c:\users\dado\documents\visual studio 2015\Projects\MasterWordCounter\MasterWordCounter\bin\Debug\itextsharp.xml
