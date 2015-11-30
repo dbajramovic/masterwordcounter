@@ -24,8 +24,17 @@ namespace MasterWordCounter
 
         private void ViewTexts_Load(object sender, EventArgs e)
         {
-            comboBox1.DataSource = lista_teksta;
-            richTextBox1.Text = lista_teksta[0].Sadrzaj;
+
+            try
+            {
+                comboBox1.DataSource = lista_teksta;
+                richTextBox1.Text = lista_teksta[0].Sadrzaj;
+            }
+            catch (Exception ex1)
+            {
+
+                MessageBox.Show(ex1.Message);
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,34 +50,35 @@ namespace MasterWordCounter
             t = t.Replace('!', ' ');
             t = t.Replace('?', ' ');
             t = t.Replace('"', ' ');
+            t = t.Replace('-', ' ');
+            t = t.Replace('\n', ' ');
             t = t.ToLower();
             t = t.Trim();
             RegexOptions options = RegexOptions.None;
             Regex regex = new Regex(@"[ ]{2,}", options);
             t = regex.Replace(t, @" ");
             richTextBox1.Text = t;
-            progressBar1.Maximum = t.Split(' ').Length;
             int j = 0;
-            while(j < t.Split(' ').Length)
+            string[] rijec = t.Split(' ');
+            progressBar1.Maximum = rijec.Length;
+            while (j < rijec.Length)
             {
-                string rijec = t.Split(' ')[j];
                 int duz = lista_rijeci.Count;
                 int i;
                 if (j == 0)
                 {
                     Rijec r1 = new Rijec();
-                    r1.Tekst = rijec;
+                    r1.Tekst = rijec[j];
                     r1.Korijen = "";
                     r1.Ponavljanje = 1;
                     r1.Tip = 0;
                     lista_rijeci.Add(r1);
                     j++;
-                    rijec = t.Split(' ')[j];
                 }
                 for(i=0;i<lista_rijeci.Count;i++)
                 {
                     duz = lista_rijeci.Count;
-                    if (lista_rijeci[i].Tekst.Equals(rijec))
+                    if (lista_rijeci[i].Tekst.Equals(rijec[j]))
                     {
                         lista_rijeci[i].Ponavljanje++;
                         break;
@@ -76,7 +86,7 @@ namespace MasterWordCounter
                     else if(i==duz-1)
                     {
                         Rijec r1 = new Rijec();
-                        r1.Tekst = rijec;
+                        r1.Tekst = rijec[j];
                         r1.Korijen = "";
                         r1.Ponavljanje = 1;
                         r1.Tip = 0;
@@ -86,7 +96,7 @@ namespace MasterWordCounter
                 } 
                 j++;
                 progressBar1.Value = j;
-                label1.Text = j+"/"+ t.Split(' ').Length;
+                label1.Text = j+"/"+ rijec.Length;
                 label1.Refresh();
             }
             MessageBox.Show("Analizirano!");
