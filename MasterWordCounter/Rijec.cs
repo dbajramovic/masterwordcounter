@@ -8,11 +8,16 @@ namespace MasterWordCounter
 {
     public class Rijec
     {
+        private int id;
         private string tekst;
         private string korijen;
         private int ponavljanje;
         private int tip;
-
+        private bool irregular;
+        public override string ToString()
+        {
+            return tekst;
+        }
         public string Tekst
         {
             get
@@ -62,6 +67,32 @@ namespace MasterWordCounter
             set
             {
                 tip = value;
+            }
+        }
+
+        public bool Irregular
+        {
+            get
+            {
+                return irregular;
+            }
+
+            set
+            {
+                irregular = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
     }

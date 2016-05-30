@@ -32,5 +32,27 @@ namespace MasterWordCounter
             ViewTexts vt = new ViewTexts(lista_tekstova);
             vt.Show();
         }
+
+        private void tESTINSERTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Rijec r = new Rijec();
+            r.Tekst = "stolica";
+            InsertNounsPronouns inp = new InsertNounsPronouns(r);
+            inp.Show();
+        }
+
+        private void insertVerbToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Rijec r = new Rijec();
+            r.Tekst = "biti";
+            InsertVerbRegularRoot inp = new InsertVerbRegularRoot(r);
+            inp.Show();
+        }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatsDashboard sd = new StatsDashboard();
+            sd.Show();
+        }
     }
 }

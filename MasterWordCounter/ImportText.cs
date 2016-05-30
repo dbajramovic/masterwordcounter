@@ -36,7 +36,8 @@ namespace MasterWordCounter
                     Tekst t = new Tekst();
                     t.Sadrzaj = linija;
                     t.Naziv = textBox2.Text;
-                    MessageBox.Show("Tekst unošen!");
+                    t.Autor = textBox3.Text;
+                    MessageBox.Show("Tekst unesen!");
                     lista_tekstova.Add(t);
                 }
             }

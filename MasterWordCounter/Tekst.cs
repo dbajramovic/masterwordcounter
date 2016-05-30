@@ -8,8 +8,10 @@ namespace MasterWordCounter
 {
     public class Tekst
     {
+        private int id;
         private string naziv;
         private string sadrzaj;
+        private string autor;
         //private Statistiska statistika;
         public string Naziv
         {
@@ -36,9 +38,36 @@ namespace MasterWordCounter
                 sadrzaj = value;
             }
         }
+
+        public string Autor
+        {
+            get
+            {
+                return autor;
+            }
+
+            set
+            {
+                autor = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
+        }
+
         public override string ToString()
         {
-            return Naziv;// + " "+ Sadrzaj;
+            return "["+Id+"] "+Autor+" - "+Naziv;// + " "+ Sadrzaj;
         }
     }
 }
